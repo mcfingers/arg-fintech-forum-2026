@@ -1,0 +1,191 @@
+.panel {
+  width: 75vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel .panel-pic {
+  position: relative;
+  width: 30rem;
+  /* height: 30rem; */
+  background-position: 75% center;
+  background-size: cover;
+  border-radius: 1rem;
+  transition: 0.7s all;
+  z-index: 0;
+}
+
+.panel .panel-pic:hover,
+.panel-feature .panel-pic:hover {
+  box-shadow: 0 0 5rem var(--secondary-blue);
+}
+
+.panel .panel-pic-border {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  border: 1px solid var(--secondary-blue);
+  border-radius: 1rem;
+}
+
+.panel .panel-data .panel-data-title {
+  margin-left: -10rem;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2rem;
+}
+
+.panel .panel-data .panel-data-title h2,
+.panel-feature .panel-data-title h2 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: -2px;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.panel .panel-data h2 span,
+.panel-feature .panel-data-title h2 span {
+  font-weight: 700;
+  color: var(--secondary-blue);
+}
+
+.panel .panel-data .panel-data-title h3,
+.panel-feature .panel-data-title h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--main-blue);
+  /* transform: rotate(-3deg); */
+  border-radius: 2rem;
+  margin-top: -1rem;
+  position: relative;
+  z-index: -1;
+  padding: 0.3rem 2rem 0.5rem;
+  box-shadow: inset 1px -3px 0 var(--secondary-blue);
+  text-align: center;
+}
+
+.panel .panel-data .panel-data-tag {
+  background: var(--main-blue);
+  padding: 0.6rem 1.9rem;
+  text-align: right;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  border-radius: 0 2rem 2rem 0;
+  width: 80%;
+}
+
+.panel .panel-data .panel-data-tag span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  position: relative;
+  top: 2px;
+  margin-right: 0.3rem;
+}
+
+.panel-feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85vw;
+  height: 90vh;
+}
+
+.panel-feature .panel-pic {
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  transition: 0.7s all;
+  z-index: 0;
+}
+
+.panel-feature .panel-pic-border {
+  width: 50rem;
+  height: 25rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border: 1px solid var(--secondary-blue);
+  border-radius: 1rem;
+}
+
+.panel-feature .panel-pic-border.variant {
+  top: 1rem;
+  left: -1rem;
+}
+
+.panel-feature .panel-data-title {
+  margin-bottom: -2rem;
+  position: relative;
+  z-index: 2;
+}
+.panel-feature .panel-data-title h2 {
+  text-align: center;
+}
+
+/***/
+
+.panel-feature .features-container {
+  display: flex;
+  gap: 2rem;
+  width: 40rem;
+  z-index: -1;
+  margin-top: -3rem;
+}
+
+.panel-feature .features-container .feature {
+  background-image: linear-gradient(
+    to bottom,
+    var(--secondary-blue),
+    var(--old-pink)
+  );
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  flex: 1;
+}
+
+.panel-feature .features-container .feature img,
+.panel-feature .features-container-variant .feature img {
+  max-height: 3rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+}
+
+.panel-feature .features-container .feature p,
+.panel-feature .features-container-variant .feature p {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--main-blue);
+}
+
+.panel-feature .features-container-variant {
+  display: flex;
+  gap: 2rem;
+  width: 40rem;
+  z-index: 0;
+  margin-top: -1rem;
+}
+
+.panel-feature .features-container-variant .feature {
+  background-color: white;
+  padding: 1.5rem 1rem 2rem;
+  border-radius: 1.5rem;
+  flex: 1;
+}

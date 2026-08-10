@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-blue: #0d1db5;
+  --secondary-blue: #3ee8ff;
+  --dark-violet: #210046;
+  --dark-violet-2: #0c0022;
+  --dark-violet-3: #211172;
+  --light-violet: #4a47d0;
+  --gradient-blue: linear-gradient(
+    to right,
+    var(--main-blue),
+    var(--secondary-blue)
+  );
+  --gradient-violet: linear-gradient(
+    to right,
+    var(--dark-violet),
+    var(--dark-violet-2)
+  );
+  --light-violet-2: #eebeff;
+  --old-pink: #b97b93;
+  --light-white: rgba(255, 255, 255, 0.6);
+  --ff-space: "Space Grotesk", sans-serif;
+}
+
+#smooth-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#smooth-content {
+  position: relative;
+  min-height: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#smooth-content {
+  position: relative;
+  min-height: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#smooth-content {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--ff-space);
+  font-optical-sizing: auto;
+}

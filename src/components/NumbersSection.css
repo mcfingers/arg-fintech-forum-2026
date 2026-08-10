@@ -1,0 +1,49 @@
+.numbers-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+}
+.numbers-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.number-item {
+  width: 15rem;
+  height: 15rem;
+  border: 2px solid var(--secondary-blue);
+  border-radius: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  backdrop-filter: blur(5px);
+  transition: 0.7s all;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.number-item:hover {
+  filter: drop-shadow(0 0 1rem var(--secondary-blue));
+}
+
+.number-icon {
+  width: 100%;
+  max-width: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.number-title {
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: var(--secondary-blue);
+}
+
+.number-text {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: white;
+}

@@ -1,0 +1,10 @@
+.expo-section {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}

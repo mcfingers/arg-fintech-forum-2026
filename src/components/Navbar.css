@@ -1,0 +1,95 @@
+.navbar-header {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+}
+
+nav {
+  display: flex;
+  width: 75vw;
+  justify-content: space-between;
+  align-items: center;
+  background-image: var(--gradient-blue);
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+}
+
+nav .logo-menu {
+  max-height: 2.5rem;
+}
+
+nav .menu-container {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+nav .menu-container a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+nav .menu-container a:hover {
+  color: var(--secondary-blue);
+}
+
+nav .lang-switch {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.3rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 0.2rem;
+  box-shadow:
+    inset 1px 1px 4px rgba(0, 0, 0, 0.2),
+    1px 1px 4px var(--secondary-blue);
+}
+
+nav .lang-switch button {
+  background-color: transparent;
+  border: none;
+  color: var(--light-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-space);
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+nav .lang-switch button.active {
+  background-color: var(--main-blue);
+  color: var(--secondary-blue);
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 7rem;
+}
+
+.social-links .social-link {
+  background-color: transparent;
+  border: none;
+  color: var(--light-white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.social-links .social-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
