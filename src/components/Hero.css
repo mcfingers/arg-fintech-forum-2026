@@ -27,6 +27,7 @@
 }
 
 .hero-container h1 span {
+  display: block;
   font-weight: 700;
   background: var(--gradient-violet-orange);
   -webkit-background-clip: text;
