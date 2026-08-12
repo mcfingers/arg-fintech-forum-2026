@@ -1,0 +1,129 @@
+.tabsWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.tabsButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  gap: 1rem;
+}
+
+.tabsPanelContainer {
+  color: white;
+  position: relative;
+  width: 40vw;
+}
+
+.tabPanel {
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  background-color: rgb(255 255 255 / 10%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.tabPanel.active {
+  animation: reveal 0.5s ease;
+}
+
+.panelButton {
+  background-color: rgb(255 255 255 / 10%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: 0.3s all ease;
+  position: relative;
+}
+
+.panelButton::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 5px;
+  height: 0;
+  background-color: var(--secondary-blue);
+  transform: translateY(-50%);
+  border-radius: 3px;
+  transition: height 0.3s ease;
+}
+
+.panelButton.ButtonActive {
+  box-shadow: 0 0 2rem var(--secondary-blue);
+  border-color: var(--secondary-blue);
+}
+
+.panelButton.ButtonActive::before {
+  height: 30px;
+}
+
+.panelButton img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.panelButton p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.panelTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--secondary-blue);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.panelTopicList {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+.panelTopicList li {
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+  margin: 0.5rem 0;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.panelTopicList li:last-child {
+  border-bottom: none;
+}
+
+.panelTopicList li::before {
+  content: "•";
+  position: absolute;
+  left: -0.7rem;
+  top: 0.4rem;
+  font-size: 0.6rem;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}

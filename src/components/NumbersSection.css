@@ -1,12 +1,15 @@
 .numbers-section {
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: transparent;
   padding: 4rem 0;
+  margin-top: -12rem;
+  margin-bottom: -12rem;
 }
 .numbers-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
 }
 
 .number-item {

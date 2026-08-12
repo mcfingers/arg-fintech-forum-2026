@@ -1,5 +1,4 @@
 import NumberItem from "./NumberItem";
-import numbersSectionBg from "../assets/numbers-section-bg.png";
 import iconParticipants from "../assets/trabajo-en-equipo.png";
 import iconSponsors from "../assets/fama.png";
 import iconPanels from "../assets/conferencia.png";
@@ -11,10 +10,7 @@ import { useContext } from "react";
 export default function NumbersSection() {
   const langCtx = useContext(LanguageContext);
   return (
-    <section
-      className="numbers-section"
-      style={{ backgroundImage: `url(${numbersSectionBg})` }}
-    >
+    <section className="numbers-section">
       <div className="numbers-container">
         <NumberItem
           number="500"

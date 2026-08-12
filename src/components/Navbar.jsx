@@ -55,7 +55,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar-header">
-      <nav>
+      <nav className="navbar">
         <div>
           <img
             src={LogoMenu}
@@ -90,7 +90,9 @@ export default function Navbar() {
           <ul className="social-links">
             {socialLinks.map((social) => (
               <li key={social.url}>
-                <button className="social-link">{social.icon}</button>
+                <a href={social.url} target="_blank" className="social-link">
+                  {social.icon}
+                </a>
               </li>
             ))}
           </ul>

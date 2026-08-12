@@ -18,6 +18,16 @@ export default function ScrollSmoother({ children }) {
     ScrollTrigger.refresh();
     // ScrollSmootherPlugin.get()?.refresh();
 
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        let target = link.getAttribute("href");
+
+        // Scroll smoothly to the target element using ScrollSmoother
+        smoother.scrollTo(target, true); // true for smooth scrolling
+      });
+    });
+
     return () => {
       if (smoother) smoother.kill();
     };

@@ -11,7 +11,7 @@
   z-index: 99;
 }
 
-nav {
+nav.navbar {
   display: flex;
   width: 75vw;
   justify-content: space-between;
@@ -21,27 +21,27 @@ nav {
   border-radius: 3rem;
 }
 
-nav .logo-menu {
+nav.navbar .logo-menu {
   max-height: 2.5rem;
 }
 
-nav .menu-container {
+nav.navbar .menu-container {
   display: flex;
   list-style: none;
   gap: 2.5rem;
 }
 
-nav .menu-container a {
+nav.navbar .menu-container a {
   text-decoration: none;
   color: white;
   transition: all 0.5s;
 }
 
-nav .menu-container a:hover {
+nav.navbar .menu-container a:hover {
   color: var(--secondary-blue);
 }
 
-nav .lang-switch {
+nav.navbar .lang-switch {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0.2rem 0.3rem;
   border-radius: 2rem;
@@ -54,7 +54,7 @@ nav .lang-switch {
     1px 1px 4px var(--secondary-blue);
 }
 
-nav .lang-switch button {
+nav.navbar .lang-switch button {
   background-color: transparent;
   border: none;
   color: var(--light-white);
@@ -69,7 +69,7 @@ nav .lang-switch button {
   cursor: pointer;
 }
 
-nav .lang-switch button.active {
+nav.navbar .lang-switch button.active {
   background-color: var(--main-blue);
   color: var(--secondary-blue);
 }

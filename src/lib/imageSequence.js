@@ -23,7 +23,13 @@ export default function imageSequence(config) {
       const cssHeight = canvasEl.clientHeight || canvasEl.height;
 
       ctx.clearRect(0, 0, cssWidth, cssHeight);
+
+      ctx.save();
+      ctx.globalAlpha = 0.5;
+
       ctx.drawImage(img, 0, 0, cssWidth, cssHeight);
+
+      ctx.restore();
       onUpdate && onUpdate.call(this);
     };
   images = config.urls.map((url, i) => {

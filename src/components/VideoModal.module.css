@@ -1,0 +1,44 @@
+.modalOverlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0 0 0 / 75%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  height: 100vh;
+  width: 60vw;
+}
+.iframeContainer {
+  width: 55vw;
+  max-height: 60vh;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonClose {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}

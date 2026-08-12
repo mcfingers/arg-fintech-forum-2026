@@ -1,12 +1,9 @@
-import { useContext } from "react";
-import LanguageContext from "../store/LanguageContext";
 import "./LogosSlider.css";
 import LogoVisa from "../assets/logo-visa.png";
 import LogoBind from "../assets/logo-bind.png";
 import LogoPoincenot from "../assets/logo-poincenot.png";
 
 export default function LogosSlider() {
-  const langCtx = useContext(LanguageContext);
   const logos = [
     {
       id: 1,
@@ -41,7 +38,6 @@ export default function LogosSlider() {
   ];
   return (
     <section className="section-slider">
-      <h2>{langCtx.translate("logosSliderTitle")}</h2>
       <div className="slider">
         <div className="group">
           {logos.map((logo) => (

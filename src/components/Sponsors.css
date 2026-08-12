@@ -1,0 +1,39 @@
+.sponsors-section {
+  padding: 4rem 0;
+}
+
+.sponsors-section h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--main-blue);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sponsors-section .logos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors-section h3 {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--dark-violet);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.sponsors-section .logos-container {
+  display: block;
+  margin: 0 auto;
+}
+
+.sponsors-section .category {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}

@@ -6,6 +6,7 @@ import parse from "html-react-parser";
 import imageSequence from "../lib/imageSequence";
 import { useCanvasResize } from "../hooks/useCanvasResize";
 import logoPresented from "../assets/logo-presented.png";
+import Countdown from "./Countdown";
 
 function Hero() {
   const heroTitleRef = useRef(null);
@@ -18,7 +19,7 @@ function Hero() {
     { length: heroBgFrameCount },
     (_, i) =>
       new URL(
-        `../assets/fintech-bg-frames/fintech-bg-frame${(i + 1)
+        `../assets/fintech-bg-2-frames/fintech-bg-2-frame${(i + 1)
           .toString()
           .padStart(4, "0")}.png`,
         import.meta.url,
@@ -93,15 +94,16 @@ function Hero() {
   return (
     <section className="hero-container" ref={heroSectionRef} id="sectionHome">
       <canvas id="heroBgCanvas" ref={canvasRef} />
+      <div className="logo-presented">
+        <img src={logoPresented} alt="" />
+      </div>
       <h1 className="hero-title" key={langCtx.locale} ref={heroTitleRef}>
         {_heroTitle}
       </h1>
       <p className="hero-text" key={`${langCtx.locale}-text`} ref={heroTextRef}>
         {_heroText}
       </p>
-      <div className="logo-presented">
-        <img src={logoPresented} alt="" />
-      </div>
+      <Countdown />
     </section>
   );
 }

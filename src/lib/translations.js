@@ -5,14 +5,14 @@ const TRANSLATIONS = {
     menuTickets: "Tickets",
     menuKeyTopics: "2026 Key Topics",
     menuVenue: "Venue",
-    heroTitle: `<span>Infrastructure for the</span> new economy`,
+    heroTitle: `Infrastructure for the <span>new economy</span>`,
     heroText: `Argentina Fintech Forum 2026 is the space to discuss the technologies, regulations and collaboration models that will make the next stage of the economy's evolution possible. A place to debate how to build that infrastructure.`,
+    heroDate: "October 29th, 2026",
     countdownDays: "Days",
     countdownHours: "Hours",
     countdownMinutes: "Minutes",
     countdownFinalize:
       "The day has come! Welcome to Argentina Fintech Forum 2026",
-    logosSliderTitle: "Presented by",
     stagePanelsTitle: "Where financial innovation meets",
     stagePanelsText:
       "An event with two simultaneous stages, a workshop space and a trade expo with booths from companies across Argentina and the region.",
@@ -62,6 +62,37 @@ const TRANSLATIONS = {
     topics5Item2: "Digital credit",
     topics5Item3: "Real and productive economy",
     topics5Item4: "Talent development and management",
+    lastEditionTitle:
+      "Relive the best moments of the <span>2025 edition</span>",
+    lastEditionSubtitle:
+      "Relive the best moments from the talks, panels and networking spaces of our latest editions.",
+    videoTooltip1: "Words from VP of Argentina's Central Bank",
+    videoTooltip2:
+      "Regulatory Compass: What Lies Ahead in Financial Regulation?",
+    videoTooltip3:
+      "The Role of Public Banks in the New Phase of the Argentine Financial System",
+    videoTooltip4:
+      "Convergence: Scale, Licensing, Distribution, and Principal-Agent Relationships",
+    videoTooltip5: "Argentina: Prospects and Challenges for a New Era",
+    videoTooltip6: "Open Finance in Argentina: The Time Has Come",
+    videoTooltip7:
+      "Sectoral Convergence: When Financial Innovation Spreads Throughout the Entire Economy",
+    videoTooltip8: "Agentic Commerce: The Next Evolution of Digital Commerce",
+    venueDate: "October 29, 2026",
+    venueTime: "8 AM to 7:30 PM",
+    venueAddress:
+      "Av. Pres. Figueroa Alcorta 2099, C1112ACA Cdad. Autónoma de Buenos Aires",
+    venueDirections:
+      "How to get there: easily by subway (Line H, Facultad de Derecho station) or bus lines 17, 33, 67, 93, 102, 124 and 130",
+    footerSubtitle: "Where Argentina's financial system meets.",
+    footerSectionsTitle: "Sections",
+    footerLinkHome: "Home",
+    footerLinkEvent: "The Event",
+    footerLinkVenue: "Venue",
+    footerSectionsTitle2: "Venue",
+    footerSectionsTitle3: "Accreditation",
+    footerDate: "Thursday, October 29: 8:00 AM - 6:00 PM",
+    footerCopyright: "All rights reserved.",
   },
   es: {
     menuHome: "Inicio",
@@ -69,14 +100,14 @@ const TRANSLATIONS = {
     menuTickets: "Tickets",
     menuKeyTopics: "Ejes Temáticos 2026",
     menuVenue: "Venue",
-    heroTitle: `<span>Infraestructura para la</span> nueva economía`,
+    heroTitle: `Infraestructura para la <span>nueva economía</span>`,
     heroText: `Argentina Fintech Forum 2026 es el espacio para discutir las tecnologías, las regulaciones y los modelos de colaboración que harán posible la próxima etapa de evolución de la economía. Un lugar para debatir cómo construir esa infraestructura.`,
+    heroDate: "29 de Octubre 2026",
     countdownDays: "Días",
     countdownHours: "Horas",
     countdownMinutes: "Minutos",
     countdownFinalize:
       "Llegó el día! Bienvenidos al Argentina Fintech Forum 2026",
-    logosSliderTitle: "Presentador por",
     stagePanelsTitle: "El punto de encuentro de la innovación financiera",
     stagePanelsText:
       "Un evento con dos escenarios simultáneos, un espacio de workshops y una expo comercial con stands de empresas de Argentina y la región.",
@@ -126,6 +157,39 @@ const TRANSLATIONS = {
     topics5Item2: "Crédito digital",
     topics5Item3: "Economía real y productiva",
     topics5Item4: "Desarrollo y gestión de talento",
+    lastEditionTitle:
+      "Reviví los mejores momentos de la <span>edición 2025</span>",
+    lastEditionSubtitle:
+      "Reviví los mejores momentos de las conferencias, paneles y espacios de networking de nuestras últimas ediciones.",
+    videoTooltip1:
+      "Palabras del Vicepresidente del Banco Central de la República Argentina",
+    videoTooltip2:
+      "Brujula regulatoria: Qué tenemos por delante en regulación financiera?",
+    videoTooltip3:
+      "El rol de la banca pública en la nueva etapa del sistema financiero argentino",
+    videoTooltip4:
+      "Convergencia: escala, licencias, distribución y principalidad",
+    videoTooltip5: "Argentina: perspectivas y desafíos de una nueva etapa",
+    videoTooltip6: "Finanzas Abiertas en Argentina: llegó el momento",
+    videoTooltip7:
+      "Convergencia sectorial: cuando la innovación financiera llega a toda la economía",
+    videoTooltip8:
+      "Agentic Commerce: la próxima evolución del comercio digital",
+    venueDate: "29 de Octubre 2026",
+    venueTime: "8 a 19:30 hs",
+    venueAddress:
+      "Av. Pres. Figueroa Alcorta 2099, C1112ACA Cdad. Autónoma de Buenos Aires",
+    venueDirections:
+      "Cómo llegar: podés llegar fácilmente en subte (Línea H, estación Facultad de Derecho) o en las líneas de colectivo 17, 33, 67, 93, 102, 124 y 130",
+    footerSubtitle: "El punto de encuentro del sistema financiero argentino.",
+    footerSectionsTitle: "Secciones",
+    footerLinkHome: "Inicio",
+    footerLinkEvent: "El Evento",
+    footerLinkVenue: "Venue",
+    footerSectionsTitle2: "Venue",
+    footerSectionsTitle3: "Acreditaciones",
+    footerDate: "Jueves 29 de Octubre: 8:00 AM - 6:00 PM",
+    footerCopyright: "Todos los derechos reservados.",
   },
 };
 

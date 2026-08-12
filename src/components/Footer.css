@@ -1,0 +1,139 @@
+footer {
+  padding: 3rem 0;
+  background: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 2fr 0.7fr 1.3fr 1fr;
+  grid-template-rows: 1fr 5rem;
+}
+
+.footer-content .footer-col {
+  padding-right: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin-bottom: 0.7rem;
+}
+
+.footer-subtitle {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.footer-social .social-link {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-blue);
+  color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+}
+
+.footer-social .social-link:hover {
+  transform: translateY(-0.5rem);
+}
+
+.footer-content h4 {
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer-content h4::before {
+  position: absolute;
+  content: "";
+  width: 5rem;
+  height: 3px;
+  background-color: var(--secondary-blue);
+  left: 0;
+  top: 1.7rem;
+}
+
+.footer-content .footer-col ul {
+  list-style: none;
+}
+
+.footer-list {
+  position: relative;
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  margin-left: 1.3rem;
+  transition: 0.3s all ease;
+}
+
+.footer-list a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-list:hover {
+  transform: translateX(0.5rem);
+}
+
+.footer-list::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -1.3rem;
+  top: 0;
+}
+
+.footer-list.links::before {
+  background-image: var(--links-icon);
+  transform: rotate(90deg);
+}
+
+.footer-list.location::before {
+  background-image: var(--location-icon);
+}
+
+.footer-list.date::before {
+  background-image: var(--date-icon);
+}
+
+.footer-copyright {
+  grid-column: span 4;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  margin-top: 3rem;
+}
+
+.footer-copyright p {
+  font-size: 0.8rem;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-copyright p span {
+  font-weight: 700;
+  color: var(--secondary-blue);
+}

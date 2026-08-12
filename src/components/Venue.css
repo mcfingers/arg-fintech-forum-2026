@@ -1,0 +1,67 @@
+.venue-section {
+  padding: 4rem 0;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.venue-section h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  text-align: center;
+}
+
+.venue-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.venue-container .venue-pic {
+  width: 60vw;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.venue-pic-border {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--secondary-blue);
+  border-radius: 1rem;
+  position: absolute;
+  right: -1rem;
+  top: 1rem;
+}
+
+.venue-info {
+  position: relative;
+}
+
+.venue-name {
+  background: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1rem 3rem;
+  color: var(--main-blue);
+  width: 39vw;
+  margin-left: -10rem;
+  margin-bottom: 1rem;
+}
+
+.venue-data {
+  width: 30vw;
+  background: var(--secondary-blue);
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--main-blue);
+  padding: 1rem 3rem;
+  margin-left: -5rem;
+  margin-bottom: 1rem;
+}
