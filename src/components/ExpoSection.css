@@ -8,3 +8,28 @@
   position: relative;
   z-index: -1;
 }
+
+.expo-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+
+  background: linear-gradient(
+    to bottom,
+    #08054a 0%,
+    rgba(8, 5, 74, 0.75) 30%,
+    rgba(8, 5, 74, 0.3) 65%,
+    transparent 100%
+  );
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+.expo-section > * {
+  position: relative;
+  z-index: 2;
+}
