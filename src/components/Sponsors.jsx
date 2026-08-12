@@ -1,14 +1,14 @@
 import "./Sponsors.css";
-import logoAkua from "../assets/logos/akua.jpg";
+import logoAkua from "../assets/logos/akua.png";
 import logoBind from "../assets/logos/bind.jpg";
 import logoClevertap from "../assets/logos/clevertap.jpg";
 import logoComplif from "../assets/logos/complif.jpg";
 import logoEpagos from "../assets/logos/epagos.jpg";
 import logoIntive from "../assets/logos/intive.jpg";
-import logoLigoPay from "../assets/logos/ligo-pay.jpg";
+import logoLigoPay from "../assets/logos/ligo-pay.png";
 import logoMastercard from "../assets/logos/mastercard.jpg";
 import logoNave from "../assets/logos/nave.jpg";
-import logoNosis from "../assets/logos/nosis.jpg";
+import logoNosis from "../assets/logos/nosis.png";
 import logoPagBrasil from "../assets/logos/pagbrasil.jpg";
 import logoPoincenot from "../assets/logos/poincenot.jpg";
 import logoPss from "../assets/logos/pss.jpg";

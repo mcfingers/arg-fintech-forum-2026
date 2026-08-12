@@ -6,6 +6,8 @@ import parse from "html-react-parser";
 import imageSequence from "../lib/imageSequence";
 import { useCanvasResize } from "../hooks/useCanvasResize";
 import logoPresented from "../assets/logo-presented.png";
+import dateIcon from "../assets/time-and-calendar.png";
+import locationIcon from "../assets/location.png";
 import Countdown from "./Countdown";
 
 function Hero() {
@@ -58,36 +60,46 @@ function Hero() {
   }, [width, height, canvasRef, heroBgFramesUrl, langCtx.locale]);
 
   useGSAP(() => {
-    const splitHeroTitle = SplitText.create(heroTitleRef.current, {
-      type: "lines",
-    });
+    let splitHeroTitle, splitHeroText, titleAnim, textAnim;
+    let cancelled = false;
 
-    const titleAnim = gsap.from(splitHeroTitle.lines, {
-      y: "-100vh",
-      stagger: 0.3,
-      ease: "power3",
-      opacity: 0,
-      duration: 1.5,
-    });
+    const run = () => {
+      if (cancelled) return;
 
-    const splitHeroText = SplitText.create(heroTextRef.current, {
-      type: "lines, words",
-    });
+      splitHeroTitle = SplitText.create(heroTitleRef.current, {
+        type: "lines",
+      });
 
-    const textAnim = gsap.from(splitHeroText.lines, {
-      y: "100",
-      stagger: 0.1,
-      ease: "power3",
-      opacity: 0,
-      duration: 1,
-      delay: 1.5,
-    });
+      titleAnim = gsap.from(splitHeroTitle.lines, {
+        y: "-100vh",
+        stagger: 0.3,
+        ease: "power3",
+        opacity: 0,
+        duration: 1.5,
+      });
+
+      splitHeroText = SplitText.create(heroTextRef.current, {
+        type: "lines, words",
+      });
+
+      textAnim = gsap.from(splitHeroText.lines, {
+        y: "100",
+        stagger: 0.1,
+        ease: "power3",
+        opacity: 0,
+        duration: 1,
+        delay: 1.5,
+      });
+    };
+
+    document.fonts.ready.then(run);
 
     return () => {
+      cancelled = true;
       if (titleAnim) titleAnim.kill();
       if (textAnim) textAnim.kill();
-      splitHeroTitle.revert();
-      splitHeroText.revert();
+      splitHeroTitle?.revert();
+      splitHeroText?.revert();
     };
   }, [langCtx.locale]);
 
@@ -103,6 +115,13 @@ function Hero() {
       <p className="hero-text" key={`${langCtx.locale}-text`} ref={heroTextRef}>
         {_heroText}
       </p>
+      <div className="hero-date-place">
+        <img src={dateIcon} alt="" />
+        <p>{langCtx.translate("heroDate")}</p>
+        <p className="separator">|</p>
+        <img src={locationIcon} alt="" />
+        <p>CEC Centro de Convenciones de Bs. As.</p>
+      </div>
       <Countdown />
     </section>
   );
