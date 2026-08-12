@@ -66,7 +66,7 @@ footer {
   position: absolute;
   content: "";
   width: 5rem;
-  height: 3px;
+  height: 2px;
   background-color: var(--secondary-blue);
   left: 0;
   top: 1.7rem;
@@ -136,4 +136,41 @@ footer {
 .footer-copyright p span {
   font-weight: 700;
   color: var(--secondary-blue);
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    width: 90vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 8rem 7rem 5rem;
+  }
+
+  .footer-copyright {
+    grid-column: auto;
+  }
+
+  .footer-title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  .footer-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-content .footer-col {
+    padding-right: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
 }

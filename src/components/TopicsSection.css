@@ -68,3 +68,10 @@
     height: 130vh;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .topics-section {
+    padding-top: 5rem;
+    height: 130vh;
+  }
+}

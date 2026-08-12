@@ -1,11 +1,24 @@
 import { Tooltip } from "react-tooltip";
 import playIcon from "../assets/play-icon.png";
+import { useEffect, useState } from "react";
 export default function VideoThumbnail({
   tooltipId,
   tooltipContent,
   videoThumb,
   onClick,
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       <div
@@ -22,16 +35,18 @@ export default function VideoThumbnail({
         </div>
         <img src={videoThumb} alt="" className="video-thumb-img" />
       </div>
-      <Tooltip
-        id={tooltipId}
-        style={{
-          backgroundColor: "white",
-          width: "12rem",
-          color: "var(--main-blue)",
-          fontWeight: "600",
-          fontSize: "1rem",
-        }}
-      />
+      {!isMobile && (
+        <Tooltip
+          id={tooltipId}
+          style={{
+            backgroundColor: "white",
+            width: "12rem",
+            color: "var(--main-blue)",
+            fontWeight: "600",
+            fontSize: "1rem",
+          }}
+        />
+      )}
     </>
   );
 }

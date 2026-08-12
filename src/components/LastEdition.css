@@ -80,7 +80,7 @@
   height: 98%;
   left: 0.4rem;
   top: 0.4rem;
-  border: 1px solid var(--secondary-blue);
+  border: 1px solid var(--secondary-orange);
   border-radius: 0.7rem;
   position: absolute;
   z-index: 2;
@@ -110,4 +110,35 @@
 
 .lastedition-section .pic-gallery-container {
   padding: 10rem 12rem 0;
+}
+
+@media screen and (max-width: 576px) {
+  .lastedition-section {
+    padding: 2.5rem 0;
+  }
+
+  .lastedition-section h2 {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .lastedition-section p {
+    width: 90%;
+  }
+
+  .lastedition-section .video-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .lastedition-section .video-thumb {
+    width: 90vw;
+    height: 10rem;
+  }
+
+  .lastedition-section .pic-gallery-container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 90%;
+  }
 }

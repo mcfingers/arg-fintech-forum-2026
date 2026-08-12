@@ -127,3 +127,31 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 576px) {
+  .tabsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabsButtonsContainer {
+    width: 90vw;
+  }
+
+  .tabsPanelContainer {
+    width: 90vw;
+  }
+
+  .tabPanel {
+    left: 0;
+    top: 1rem;
+  }
+
+  .panelTitle {
+    font-size: 1.5rem;
+  }
+
+  .panelTopicList {
+    font-size: 0.9rem;
+  }
+}

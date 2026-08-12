@@ -160,6 +160,7 @@ export default function LastEdition() {
           showThumbnails={true}
           showFullscreenButton={false}
           showPlayButton={false}
+          useBrowserFullscreen={true}
         />
       </div>
     </section>

@@ -53,3 +53,31 @@
   position: relative;
   z-index: 2;
 }
+
+@media screen and (max-width: 576px) {
+  .expo-section {
+    height: 75vh;
+  }
+  .panel-feature .features-container-variant {
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 90vw;
+    gap: 1rem;
+  }
+
+  .panel-feature .features-container-variant .feature {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+  }
+
+  .panel-feature .features-container-variant .feature img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .panel-feature .features-container-variant .feature p {
+    text-align: left;
+  }
+}

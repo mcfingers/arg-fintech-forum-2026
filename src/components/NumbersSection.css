@@ -56,3 +56,10 @@
   font-weight: 400;
   color: white;
 }
+
+@media screen and (max-width: 576px) {
+  .numbers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
