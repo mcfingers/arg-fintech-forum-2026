@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import LanguageContext from "../store/LanguageContext";
 import "./Navbar.css";
 import LogoMenu from "../assets/logo-menu.png";
@@ -6,6 +6,7 @@ import { BsLinkedin, BsInstagram, BsTwitterX, BsYoutube } from "react-icons/bs";
 
 export default function Navbar() {
   const langCtx = useContext(LanguageContext);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleLang = (lng) => {
     langCtx.setLocale(lng);
@@ -53,6 +54,10 @@ export default function Navbar() {
     },
   ];
 
+  function handleMenuClick() {
+    setIsOpen((prev) => !prev);
+  }
+
   return (
     <div className="navbar-header">
       <nav className="navbar">
@@ -63,11 +68,15 @@ export default function Navbar() {
             className="logo-menu"
           />
         </div>
-        <div>
+        <div
+          className={`navbar-menu ${isOpen ? "menu-mobile-open" : "menu-mobile-close"}`}
+        >
           <ul className="menu-container">
             {menuItems.map((item) => (
               <li key={item.content}>
-                <a href={item.section}>{langCtx.translate(item.content)}</a>
+                <a href={item.section} onClick={handleMenuClick}>
+                  {langCtx.translate(item.content)}
+                </a>
               </li>
             ))}
           </ul>
@@ -86,7 +95,7 @@ export default function Navbar() {
             EN
           </button>
         </div>
-        <div>
+        <div className="navbar-social">
           <ul className="social-links">
             {socialLinks.map((social) => (
               <li key={social.url}>
@@ -96,6 +105,11 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="hamburger-icon" onClick={handleMenuClick}>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
         </div>
       </nav>
     </div>

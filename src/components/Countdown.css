@@ -33,3 +33,16 @@
 .countdown-section .cd-container .number:hover {
   text-shadow: 0 0 2rem var(--secondary-blue);
 }
+
+@media (max-width: 576px) {
+  .countdown-section {
+    height: 11vh;
+  }
+  .countdown-section .cd-container {
+    gap: 2rem;
+  }
+
+  .countdown-section .cd-container .number {
+    font-size: 3rem;
+  }
+}

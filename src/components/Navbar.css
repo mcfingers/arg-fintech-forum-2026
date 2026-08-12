@@ -93,3 +93,67 @@ nav.navbar .lang-switch button.active {
 .social-links .social-link:hover {
   color: rgba(255, 255, 255, 0.8);
 }
+
+nav .hamburger-icon {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  nav.navbar {
+    width: 90vw;
+    padding: 0.5rem 1.5rem;
+  }
+
+  nav .navbar-social {
+    display: none;
+  }
+
+  nav .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.8rem;
+  }
+
+  nav .hamburger-icon .hamburger-line {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    background-color: white;
+  }
+
+  nav .navbar-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.5s all ease;
+    padding-top: 5.3rem;
+    z-index: -1;
+  }
+
+  nav .navbar-menu .menu-container {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  nav .navbar-menu .menu-container li {
+    padding: 0.4rem 0;
+  }
+
+  nav .navbar-menu.menu-mobile-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  nav .navbar-menu.menu-mobile-close {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50vh);
+  }
+}
