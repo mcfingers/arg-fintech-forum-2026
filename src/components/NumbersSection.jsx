@@ -13,7 +13,7 @@ export default function NumbersSection() {
     <section className="numbers-section">
       <div className="numbers-container">
         <NumberItem
-          number="500"
+          number="5000"
           text={langCtx.translate("numbersParticipants")}
           icon={iconParticipants}
         />
