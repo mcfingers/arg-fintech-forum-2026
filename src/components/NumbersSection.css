@@ -1,17 +1,21 @@
 .numbers-section {
   background-color: transparent;
   padding: 4rem 0;
-  margin-top: -12rem;
-  margin-bottom: -12rem;
   position: relative;
   z-index: 2;
+  background: linear-gradient(
+    #130824 0%,
+    #130824 30%,
+    #130824 50%,
+    #130824 80%,
+    #130824 100%
+  );
 }
+
 .numbers-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
 }
 
 .number-item {

@@ -23,11 +23,12 @@
     var(--dark-violet),
     var(--dark-violet-2)
   );
-  --gradient-violet-orange: linear-gradient(to right, #763eff 0%, #e89c6e 100%);
+  --gradient-violet-orange: linear-gradient(to right, #763eff 0%, #ffb965 100%);
   --light-violet-2: #eebeff;
   --old-pink: #b97b93;
   --light-white: rgba(255, 255, 255, 0.6);
   --dark-blue: #0d1a4a;
+  --secondary-orange: #ffb965;
   --ff-space: "Space Grotesk", sans-serif;
 }
 

@@ -54,7 +54,7 @@ export default function StagePanels() {
             attendees="+2000"
             panels="15"
             speakers="55"
-            dataSpeed="1.2"
+            dataSpeed="1.1"
           />
           <StagePanelItem
             id={2}
@@ -63,19 +63,19 @@ export default function StagePanels() {
             attendees="+500"
             panels="10"
             speakers="30"
-            dataSpeed="1.1"
+            dataSpeed="1.05"
           />
           <StagePanelFeaturedItem
             id={3}
             stagePic={stage3}
             stageTitle="stagePanelRoom3"
             features={features}
-            dataSpeed="0.9"
+            dataSpeed="0.95"
             stageSubtitle="stagePanelSubtitle"
           />
         </div>
       </div>
-      <div className="stage-footer" data-speed="0.8">
+      <div className="stage-footer" data-speed="0.9">
         <p>{langCtx.translate("stageFooter")}</p>
       </div>
     </section>

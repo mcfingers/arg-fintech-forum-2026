@@ -29,7 +29,7 @@ export default function StagePanelItem({
           ></div>
         </div>
       </div>
-      <div className="panel-data" data-speed={dataSpeed - 0.2}>
+      <div className="panel-data" data-speed={dataSpeed}>
         <div className="panel-data-title">
           <h2>{parse(langCtx.translate(stageTitle))}</h2>
         </div>

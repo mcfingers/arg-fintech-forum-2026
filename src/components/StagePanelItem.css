@@ -20,7 +20,7 @@
 
 .panel .panel-pic:hover,
 .panel-feature .panel-pic:hover {
-  box-shadow: 0 0 5rem var(--secondary-blue);
+  box-shadow: 0 0 5rem var(--secondary-orange);
 }
 
 .panel .panel-pic-border {
@@ -29,7 +29,7 @@
   position: absolute;
   top: 1rem;
   left: -1rem;
-  border: 1px solid var(--secondary-blue);
+  border: 1px solid var(--secondary-orange);
   border-radius: 1rem;
 }
 
@@ -101,6 +101,7 @@
   justify-content: center;
   width: 85vw;
   height: 90vh;
+  margin-top: 3rem;
 }
 
 .panel-feature .panel-pic {
@@ -120,7 +121,7 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  border: 1px solid var(--secondary-blue);
+  border: 1px solid var(--secondary-orange);
   border-radius: 1rem;
 }
 

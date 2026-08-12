@@ -22,7 +22,7 @@ export default function Venue() {
         >
           <div className="venue-pic-border"></div>
         </div>
-        <div className="venue-info" data-speed="0.9">
+        <div className="venue-info" data-speed="0.95">
           <div className="venue-name">
             CEC Centro de Convenciones de Bs. As.
           </div>
