@@ -58,7 +58,7 @@ function HeroVideo() {
     <section
       className="hero-container"
       id="sectionHome"
-      style={{ height: "100vh" }}
+      style={{ height: "100%", paddingBottom: "3rem" }}
     >
       <div className="video-bg-container">
         <video
