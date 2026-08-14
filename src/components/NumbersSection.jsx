@@ -5,13 +5,30 @@ import iconPanels from "../assets/conferencia.png";
 import iconSpeakers from "../assets/orador-publico.png";
 import "./NumbersSection.css";
 import LanguageContext from "../store/LanguageContext";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
+import { gsap, useGSAP } from "../lib/gsap";
 
 export default function NumbersSection() {
   const langCtx = useContext(LanguageContext);
+  const numbersRef = useRef();
+  useGSAP(
+    () => {
+      gsap.from(numbersRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: numbersRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    },
+    { scope: numbersRef },
+  );
   return (
     <section className="numbers-section">
-      <div className="numbers-container">
+      <div className="numbers-container" ref={numbersRef}>
         <NumberItem
           number="5000"
           text={langCtx.translate("numbersParticipants")}

@@ -3,9 +3,29 @@ import venueBg from "../assets/numbers-section-bg.png";
 import venuePic from "../assets/cec_convenciones_exposiciones1200.jpg";
 import LanguageContext from "../store/LanguageContext";
 import { useContext } from "react";
+import { gsap, useGSAP } from "../lib/gsap";
 
 export default function Venue() {
   const langCtx = useContext(LanguageContext);
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".venue-container",
+        start: "top bottom",
+        end: "+=800",
+        scrub: 1,
+        // pin: true,
+      },
+      defaults: {
+        x: "100vw",
+        ease: "power2.inOut",
+      },
+    });
+    tl.from(".venue-name", {});
+    tl.from(".venue-data", {
+      stagger: 0.1,
+    });
+  });
   return (
     <section
       className="venue-section"

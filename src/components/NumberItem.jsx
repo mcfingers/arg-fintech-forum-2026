@@ -3,6 +3,7 @@ import { gsap, useGSAP } from "../lib/gsap";
 
 export default function NumberItem({ number, icon, text }) {
   const counterRef = useRef();
+  const itemRef = useRef();
 
   useGSAP(() => {
     const start = 0;
@@ -19,14 +20,23 @@ export default function NumberItem({ number, icon, text }) {
           counterRef.current.textContent = String(Math.round(obj.val));
         }
       },
+      scrollTrigger: {
+        trigger: itemRef.current,
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
     });
 
     return () => {
-      if (tween) tween.kill();
+      if (tween) {
+        if (tween.scrollTrigger) tween.scrollTrigger.kill();
+        tween.kill();
+      }
     };
   }, [number]);
+
   return (
-    <div className="number-item">
+    <div className="number-item" ref={itemRef}>
       <img src={icon} alt="" className="number-icon" />
       <h2 className="number-title" ref={counterRef}>
         0
