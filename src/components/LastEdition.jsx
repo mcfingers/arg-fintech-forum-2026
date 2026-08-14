@@ -136,15 +136,13 @@ export default function LastEdition() {
 
       <div className="video-gallery" data-speed="0.9">
         {videosThumbnails.map((video) => (
-          <>
-            <VideoThumbnail
-              key={video.id}
-              tooltipContent={langCtx.translate(`videoTooltip${video.id}`)}
-              tooltipId={String(video.id)}
-              videoThumb={video.vidThumb}
-              onClick={() => handleClickVideo(video.videoUrl)}
-            />
-          </>
+          <VideoThumbnail
+            key={video.id}
+            tooltipContent={langCtx.translate(`videoTooltip${video.id}`)}
+            tooltipId={String(video.id)}
+            videoThumb={video.vidThumb}
+            onClick={() => handleClickVideo(video.videoUrl)}
+          />
         ))}
       </div>
       <VideoModal
@@ -161,6 +159,8 @@ export default function LastEdition() {
           showFullscreenButton={false}
           showPlayButton={false}
           useBrowserFullscreen={true}
+          originalAlt="Imagen de la edicion AFF 2025"
+          thumbnailAlt="Icono de la imagen de la edicion AFF 2025"
         />
       </div>
     </section>

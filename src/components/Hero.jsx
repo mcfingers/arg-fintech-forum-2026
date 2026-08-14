@@ -68,6 +68,7 @@ function Hero() {
 
       splitHeroTitle = SplitText.create(heroTitleRef.current, {
         type: "lines",
+        aria: "none",
       });
 
       titleAnim = gsap.from(splitHeroTitle.lines, {
@@ -80,6 +81,7 @@ function Hero() {
 
       splitHeroText = SplitText.create(heroTextRef.current, {
         type: "lines, words",
+        aria: "none",
       });
 
       textAnim = gsap.from(splitHeroText.lines, {

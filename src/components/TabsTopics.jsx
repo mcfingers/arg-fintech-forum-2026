@@ -17,7 +17,7 @@ export default function TabsTopics({ panels }) {
           <button
             role="tab"
             id={`tab-${index + 1}`}
-            tabIndex={index}
+            tabIndex="0"
             onFocus={() => handleActiveTab(index)}
             onMouseEnter={() => handleActiveTab(index)}
             className={`${styles.panelButton} ${activeTab === index ? styles.ButtonActive : null}`}

@@ -1,7 +1,7 @@
 import "./App.css";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import LogosSlider from "./components/LogosSlider";
 import StagePanels from "./components/StagePanels";
 import ScrollSmoother from "./components/ScrollSmoother";
@@ -13,10 +13,18 @@ import Sponsors from "./components/Sponsors";
 import Venue from "./components/Venue";
 import Footer from "./components/Footer";
 
+const Hero = lazy(() => import("./components/Hero"));
+
 function App() {
   return (
-    <Suspense>
+    <Suspense fallback={<div className="loader">Cargando...</div>}>
       <>
+        <title>Argentina Fintech Forum 2026</title>
+        <meta
+          name="description"
+          content="Argentina Fintech Forum 2026 es el espacio para discutir las tecnologías, las regulaciones y los modelos de colaboración que harán posible la próxima etapa de evolución de la economía. Un lugar para debatir cómo construir esa infraestructura."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Navbar />
         <ScrollSmoother>
           <Hero />

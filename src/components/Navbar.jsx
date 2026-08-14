@@ -39,18 +39,22 @@ export default function Navbar() {
     {
       url: "https://www.linkedin.com/company/camara-argentina-de-fintech/",
       icon: <BsLinkedin />,
+      ariaLabel: "Link to Linkedin social network",
     },
     {
       url: "https://www.instagram.com/camarafintechar/",
       icon: <BsInstagram />,
+      ariaLabel: "Link to Instragram social network",
     },
     {
       url: "https://x.com/CamaraFintechAr",
       icon: <BsTwitterX />,
+      ariaLabel: "Link to Twitter social network",
     },
     {
       url: "https://www.youtube.com/@camaraargentinafintech",
       icon: <BsYoutube />,
+      ariaLabel: "Link to Youtube social network",
     },
   ];
 
@@ -99,7 +103,12 @@ export default function Navbar() {
           <ul className="social-links">
             {socialLinks.map((social) => (
               <li key={social.url}>
-                <a href={social.url} target="_blank" className="social-link">
+                <a
+                  href={social.url}
+                  target="_blank"
+                  className="social-link"
+                  aria-label={social.ariaLabel}
+                >
                   {social.icon}
                 </a>
               </li>

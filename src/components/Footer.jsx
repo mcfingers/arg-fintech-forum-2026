@@ -13,21 +13,25 @@ export default function Footer() {
       social: "Linkedin",
       icon: <BsLinkedin />,
       url: "https://www.linkedin.com/company/camara-argentina-de-fintech/",
+      ariaLabel: "Link to Linkedin social network",
     },
     {
       social: "Instagram",
       icon: <BsInstagram />,
       url: "https://www.instagram.com/camarafintechar/",
+      ariaLabel: "Link to Instagram social network",
     },
     {
       social: "Twitter",
       icon: <BsTwitterX />,
       url: "https://x.com/CamaraFintechAr",
+      ariaLabel: "Link to Twitter social network",
     },
     {
       social: "Youtube",
       icon: <BsYoutube />,
       url: "https://www.youtube.com/@camaraargentinafintech",
+      ariaLabel: "Link to Youtube social network",
     },
   ];
   return (
@@ -40,7 +44,12 @@ export default function Footer() {
           </p>
           <div className="footer-social">
             {socials.map((social) => (
-              <a href={social.url} key={social.social} className="social-link">
+              <a
+                href={social.url}
+                key={social.social}
+                className="social-link"
+                aria-label={social.ariaLabel}
+              >
                 {social.icon}
               </a>
             ))}
