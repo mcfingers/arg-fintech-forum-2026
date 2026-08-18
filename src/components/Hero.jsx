@@ -21,7 +21,7 @@ function Hero() {
     { length: heroBgFrameCount },
     (_, i) =>
       new URL(
-        `../assets/fintech-bg-2-frames/fintech-bg-2-frame${(i + 1)
+        `../assets/fintech-bg-2-frames-tinyfied/fintech-bg-2-frame${(i + 1)
           .toString()
           .padStart(4, "0")}.png`,
         import.meta.url,
