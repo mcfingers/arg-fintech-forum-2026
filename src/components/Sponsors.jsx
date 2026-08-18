@@ -75,6 +75,7 @@ export default function Sponsors() {
       id: 9,
       logoImg: logoMastercard,
       logoUrl: "https://www.mastercard.com/",
+      imgAlt: "Mastercard logo",
     },
     {
       id: 10,

@@ -93,34 +93,50 @@ export default function LastEdition() {
     {
       original: imgGallery1,
       thumbnail: imgGallery1,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
     {
       original: imgGallery2,
       thumbnail: imgGallery2,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
     {
       original: imgGallery3,
       thumbnail: imgGallery3,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
     {
       original: imgGallery4,
       thumbnail: imgGallery4,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
     {
       original: imgGallery5,
       thumbnail: imgGallery5,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
     {
       original: imgGallery6,
       thumbnail: imgGallery6,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
     {
       original: imgGallery7,
       thumbnail: imgGallery7,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
     {
       original: imgGallery8,
       thumbnail: imgGallery8,
+      originalAlt: "Imagen de la edicion AFF 2025",
+      thumbnailAlt: "Icono de la imagen de la edicion AFF 2025",
     },
   ];
 
@@ -159,8 +175,6 @@ export default function LastEdition() {
           showFullscreenButton={false}
           showPlayButton={false}
           useBrowserFullscreen={true}
-          originalAlt="Imagen de la edicion AFF 2025"
-          thumbnailAlt="Icono de la imagen de la edicion AFF 2025"
         />
       </div>
     </section>
